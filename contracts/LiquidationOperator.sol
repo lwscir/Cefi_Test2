@@ -279,6 +279,7 @@ contract LiquidationOperator is IUniswapV2Callee {
 
         uint repay_WETH = getAmountIn(debtToCover, reserve_WETH_Pool1, reserve_USDC_Pool1);
         WETH.transfer(address(uniswapV2Pair_WETH_USDC), repay_WETH);
+        console.log("Repay_WETH",repay_WETH);
         
         // END TODO
     }
